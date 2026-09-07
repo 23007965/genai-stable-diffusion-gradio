@@ -4,14 +4,42 @@
 To design and deploy a prototype application for image generation utilizing the Stable Diffusion model, integrated with the Gradio UI framework for interactive user engagement and evaluation.
 
 ### PROBLEM STATEMENT:
+To develop a prototype application that generates images from user-provided text prompts using the Stable Diffusion model. The application should provide an interactive Gradio user interface where users can enter prompts and adjust image-generation parameters such as inference steps, guidance scale, width, and height.
 
 ### DESIGN STEPS:
 
 #### STEP 1:
 
+Set up the Stable Diffusion API
+
+- Import the required Python libraries.
+- Load the Hugging Face API key using the .env file.
+- Define the text-to-image API endpoint.
+- Create a function to send the user prompt and parameters to the Stable Diffusion model.
+
 #### STEP 2:
 
+Implement image generation
+
+- Accept the user's text prompt and optional negative prompt.
+- Set parameters such as:
+- Inference steps
+- Guidance scale
+- Image width
+- Image height
+- Send these parameters to the Stable Diffusion API.
+- Convert the generated Base64 image data into a PIL image.
+
 #### STEP 3:
+
+Develop the Gradio interface
+
+- Create an interactive Gradio interface using gr.Blocks().
+- Add a textbox for entering the image prompt.
+- Add a Submit button.
+- Provide advanced options for negative prompt, inference steps, guidance scale, width, and height.
+- Display the generated image as the output.
+- Launch the application using Gradio for interactive user evaluation.
 
 ### PROGRAM:
 ```python
@@ -104,3 +132,4 @@ gr.close_all()
 
 
 ### RESULT:
+The prototype application was successfully developed and deployed using the Stable Diffusion model and Gradio framework.
