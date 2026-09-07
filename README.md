@@ -98,4 +98,9 @@ gr.close_all()
 ```
 ### OUTPUT:
 
+##### Prompt : A beautiful mountain landscape with snow-covered mountains, a lake, green trees, and a colorful sunset, realistic photography
+
+<img width="512" height="512" alt="download" src="https://github.com/user-attachments/assets/237c628e-3611-4ecb-8dff-e54ebbdc8740" />
+
+
 ### RESULT:
